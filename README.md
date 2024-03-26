@@ -1,3 +1,25 @@
+### Setup environment
+Instructions from Appium https://appium.io/docs/en/2.5/quickstart/
+
+- install Java (OpenJDK) 
+- install Node.JS
+- install Appium https://appium.io/docs/en/2.1/quickstart/install/
+- install UIAutomator2 https://github.com/appium/appium-uiautomator2-driver
+- install Android Studio and Android SDK https://developer.android.com/studio
+- add to global vars ANDROID_HOME and ANDROID_SDK_ROOT
+
+    _for Ubuntu:_ \
+    _$ vim ~/.bashrc_ \
+    _Add following lines_ \
+    _export ANDROID_HOME=$HOME/Android/Sdk_ \
+    _export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools_ \
+
+- optionally - install Appium Inspector https://github.com/appium/appium-inspector/releases
+
+
+
+
+
 ### Ajax Systems, Python developer in test for Application team
 Для виконання тестового завдання Вам необхідно встановити застосунок Ajax Systems на телефон (якщо не маєте реального Android девайса, можна використати емулятор).
 
