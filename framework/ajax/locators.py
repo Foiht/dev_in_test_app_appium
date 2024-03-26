@@ -11,6 +11,7 @@ class LoginPageLocators:
     PASSWORD_FIELD = (AppiumBy.ID, 'com.ajaxsystems:id/authLoginPassword')
     FORGOT_PASSWORD_LINK = (AppiumBy.ID, 'com.ajaxsystems:id/authLoginForgotPassword')
     AUTOLOGIN_BUTTON = (AppiumBy.ID, 'com.ajaxsystems:id/authLogin')
+    INVALID_MESSAGE = (AppiumBy.ID, 'com.ajaxsystems:id/snackbar_text')
 
 
 class MainPageLocators:

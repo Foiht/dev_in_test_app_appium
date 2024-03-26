@@ -6,10 +6,14 @@ import allure
 
 from config import user_mail, user_password
 
-params = (
-    ("username", "password", False),
-    (1234, 7657, False),
-    (user_mail, user_password, True)
+params_invalid = (
+    ("username", "password", "Invalid email format"),
+    (1234, 7657, 'Invalid email format'),
+    ("aa@gmail.com", "***", "Wrong login or password")
+)
+
+params_valid = (
+    (user_mail, user_password),
 )
 
 
@@ -30,13 +34,19 @@ class TestLoginPage:
             logging.info(f'{dir(element_email)}')
             assert element_email, f"Element email is not found"
             assert element_email.is_enabled(), f"Element email is disabled"
+            logging.info(fr"Element email is verified, {element_email.text}")
 
-    @pytest.mark.parametrize('login, password, success', params)
-    def test_user_log_in(self, login, password, success):
-        with allure.step("Testing user login page: login scenario"):
+    @pytest.mark.parametrize('login, password, msg', params_invalid)
+    def test_user_log_in_invalid(self, login, password, msg):
+        with allure.step("Testing user login page: invalid login"):
             self.login_page.fill_user_credential(login, password)
-            time.sleep(3)
-            assert self.navigator.app_main_page.is_app_main_page() == success, (f"Unexpected result, "
-                                                                                f"check for App Main Page "
-                                                                                f"should be {success}")
+            popup_message = self.login_page.invalid_message()
+            assert popup_message.text.startswith(msg)
+            logging.info(f"Negative test is PASSED, {popup_message.text}")
 
+    @pytest.mark.parametrize('login, password', params_valid)
+    def test_user_log_in_valid(self, login, password):
+        with allure.step("Testing user login page: valid login"):
+            self.login_page.fill_user_credential(login, password)
+            time.sleep(5)
+            assert self.navigator.app_main_page.is_app_main_page(), "Unexpected behavior, AppMainPage was not found"

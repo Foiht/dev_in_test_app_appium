@@ -17,6 +17,9 @@ class LoginPage(BasePage):
     def login_button(self) -> WebElement:
         return self.find_element(*LoginPageLocators.AUTOLOGIN_BUTTON)
 
+    def invalid_message(self):
+        return self.find_element(*LoginPageLocators.INVALID_MESSAGE)
+
     def fill_user_credential(self, username: str, password: str) -> None:
         self.user_field().send_keys(username)
         self.password_field().send_keys(password)
