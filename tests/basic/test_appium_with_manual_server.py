@@ -24,11 +24,11 @@ def driver_base():
         driver.quit()
 
 
-def test_find_battery(driver_base) -> None:
+def test_find_homepage_title(driver_base) -> None:
     """
     Test established connection with Appium server and Android emulator
     Run Appium server with default settings:
     $ appium
     """
-    el = driver_base.find_element(by=AppiumBy.XPATH, value='//*[@text="Battery"]')
-    el.click()
+    el = driver_base.find_element(by=AppiumBy.ID, value='com.android.settings:id/homepage_title')
+    el.is_enabled()

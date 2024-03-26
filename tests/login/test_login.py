@@ -31,7 +31,6 @@ class TestLoginPage:
     def test_element_login_page_email(self):
         with allure.step("Testing user login page element: Email text field"):
             element_email = self.login_page.user_field()
-            logging.info(f'{dir(element_email)}')
             assert element_email, f"Element email is not found"
             assert element_email.is_enabled(), f"Element email is disabled"
             logging.info(fr"Element email is verified, {element_email.text}")
