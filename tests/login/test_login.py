@@ -40,8 +40,9 @@ class TestLoginPage:
         with allure.step("Testing user login page: invalid login"):
             self.login_page.fill_user_credential(login, password)
             popup_message = self.login_page.invalid_message()
+            assert popup_message, f"Popup message is not found"
             assert popup_message.text.startswith(msg)
-            logging.info(f"Negative test is PASSED, {popup_message.text}")
+            logging.info(f"Negative test is PASSED, Message: {popup_message.text}")
 
     @pytest.mark.parametrize('login, password', params_valid)
     def test_user_log_in_valid(self, login, password):

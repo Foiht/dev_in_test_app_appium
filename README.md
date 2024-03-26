@@ -21,6 +21,9 @@ Instructions from Appium https://appium.io/docs/en/2.5/quickstart/
 `PASSWORD=<PASSWORD>` 
 
 
+Test results, see info.log and debug.log in the project root \
+![plot](./test_results.png)
+
 
 ### Ajax Systems, Python developer in test for Application team
 Для виконання тестового завдання Вам необхідно встановити застосунок Ajax Systems на телефон (якщо не маєте реального Android девайса, можна використати емулятор).

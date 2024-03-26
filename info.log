@@ -1,0 +1,105 @@
+# INFO     [2024-03-26 16:02:10,598] conftest.py          [LINE:37  ]   Starting appium server
+# INFO     [2024-03-26 16:02:15,604] conftest.py          [LINE:17  ]   =============== START TEST 'test_app_ajax' =============== 
+# INFO     [2024-03-26 16:02:15,612] android_utils.py     [LINE:30  ]   Device uid='emulator-5554'
+# INFO     [2024-03-26 16:02:19,765] conftest.py          [LINE:48  ]   Webdriver started
+# INFO     [2024-03-26 16:02:29,997] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:02:29,997] conftest.py          [LINE:51  ]   Webdriver stopped
+# INFO     [2024-03-26 16:02:30,162] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_app_ajax' =============== 
+# INFO     [2024-03-26 16:02:30,164] conftest.py          [LINE:17  ]   =============== START TEST 'test_element_login_page_email' =============== 
+# INFO     [2024-03-26 16:02:30,166] android_utils.py     [LINE:30  ]   Device uid='emulator-5554'
+# INFO     [2024-03-26 16:02:34,685] conftest.py          [LINE:48  ]   Webdriver started
+# INFO     [2024-03-26 16:02:35,396] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:02:35,943] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:02:40,063] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:02:40,642] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:02:40,660] test_login.py        [LINE:36  ]   Element email is verified, 
+# INFO     [2024-03-26 16:02:40,661] conftest.py          [LINE:51  ]   Webdriver stopped
+# INFO     [2024-03-26 16:02:40,862] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_element_login_page_email' =============== 
+# INFO     [2024-03-26 16:02:40,863] conftest.py          [LINE:17  ]   =============== START TEST 'test_user_log_in_invalid[username-password-Invalid email format]' =============== 
+# INFO     [2024-03-26 16:02:40,865] android_utils.py     [LINE:30  ]   Device uid='emulator-5554'
+# INFO     [2024-03-26 16:02:44,736] conftest.py          [LINE:48  ]   Webdriver started
+# INFO     [2024-03-26 16:02:45,438] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:02:45,945] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:02:49,974] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:02:50,583] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:02:50,693] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginPassword')"
+# INFO     [2024-03-26 16:02:51,318] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLogin')"
+# INFO     [2024-03-26 16:02:52,748] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/snackbar_text')"
+# INFO     [2024-03-26 16:02:52,799] test_login.py        [LINE:45  ]   Negative test is PASSED, Invalid email format
+# INFO     [2024-03-26 16:02:52,800] conftest.py          [LINE:51  ]   Webdriver stopped
+# INFO     [2024-03-26 16:02:53,004] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_user_log_in_invalid[username-password-Invalid email format]' =============== 
+# INFO     [2024-03-26 16:02:53,005] conftest.py          [LINE:17  ]   =============== START TEST 'test_user_log_in_invalid[1234-7657-Invalid email format]' =============== 
+# INFO     [2024-03-26 16:02:53,009] android_utils.py     [LINE:30  ]   Device uid='emulator-5554'
+# INFO     [2024-03-26 16:02:56,924] conftest.py          [LINE:48  ]   Webdriver started
+# INFO     [2024-03-26 16:02:57,598] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:02:58,108] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:03:01,258] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:03:01,856] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:03:01,970] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginPassword')"
+# INFO     [2024-03-26 16:03:02,588] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLogin')"
+# INFO     [2024-03-26 16:03:04,046] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/snackbar_text')"
+# INFO     [2024-03-26 16:03:04,063] test_login.py        [LINE:45  ]   Negative test is PASSED, Invalid email format
+# INFO     [2024-03-26 16:03:04,064] conftest.py          [LINE:51  ]   Webdriver stopped
+# INFO     [2024-03-26 16:03:04,204] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_user_log_in_invalid[1234-7657-Invalid email format]' =============== 
+# INFO     [2024-03-26 16:03:04,205] conftest.py          [LINE:17  ]   =============== START TEST 'test_user_log_in_invalid[aa@gmail.com-***-Wrong login or password]' =============== 
+# INFO     [2024-03-26 16:03:04,208] android_utils.py     [LINE:30  ]   Device uid='emulator-5554'
+# INFO     [2024-03-26 16:03:08,869] conftest.py          [LINE:48  ]   Webdriver started
+# INFO     [2024-03-26 16:03:09,926] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:03:10,386] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:03:13,503] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:03:14,106] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:03:15,319] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginPassword')"
+# INFO     [2024-03-26 16:03:16,550] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLogin')"
+# INFO     [2024-03-26 16:03:19,476] base_page.py         [LINE:19  ]   Element was found with timeout=5, "('id', 'com.ajaxsystems:id/snackbar_text')"
+# INFO     [2024-03-26 16:03:19,493] test_login.py        [LINE:45  ]   Negative test is PASSED, Wrong login or password
+# INFO     [2024-03-26 16:03:19,494] conftest.py          [LINE:51  ]   Webdriver stopped
+# INFO     [2024-03-26 16:03:19,676] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_user_log_in_invalid[aa@gmail.com-***-Wrong login or password]' =============== 
+# INFO     [2024-03-26 16:03:19,677] conftest.py          [LINE:17  ]   =============== START TEST 'test_user_log_in_valid[qa.ajax.app.automation@gmail.com-qa_automation_password]' =============== 
+# INFO     [2024-03-26 16:03:19,688] android_utils.py     [LINE:30  ]   Device uid='emulator-5554'
+# INFO     [2024-03-26 16:03:23,947] conftest.py          [LINE:48  ]   Webdriver started
+# INFO     [2024-03-26 16:03:25,069] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:03:25,449] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:03:29,602] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:03:30,208] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:03:30,307] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginPassword')"
+# INFO     [2024-03-26 16:03:30,954] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLogin')"
+# INFO     [2024-03-26 16:03:38,249] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/menuDrawer')"
+# INFO     [2024-03-26 16:03:38,250] conftest.py          [LINE:51  ]   Webdriver stopped
+# INFO     [2024-03-26 16:03:38,406] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_user_log_in_valid[qa.ajax.app.automation@gmail.com-qa_automation_password]' =============== 
+# INFO     [2024-03-26 16:03:38,409] android_utils.py     [LINE:30  ]   Device uid='emulator-5554'
+# INFO     [2024-03-26 16:03:42,800] conftest.py          [LINE:58  ]   Webdriver started
+# INFO     [2024-03-26 16:03:43,936] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:03:44,485] base_page.py         [LINE:28  ]   Element was found, "('xpath', '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')"
+# INFO     [2024-03-26 16:03:48,590] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:03:49,197] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:03:49,222] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginEmail')"
+# INFO     [2024-03-26 16:03:49,275] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLoginPassword')"
+# INFO     [2024-03-26 16:03:50,500] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/authLogin')"
+# INFO     [2024-03-26 16:03:56,530] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/menuDrawer')"
+# INFO     [2024-03-26 16:03:56,530] conftest.py          [LINE:17  ]   =============== START TEST 'test_element_main_page_menu_app_settings' =============== 
+# INFO     [2024-03-26 16:03:57,117] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/menuDrawer')"
+# INFO     [2024-03-26 16:03:58,156] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/settings')"
+# INFO     [2024-03-26 16:03:58,705] test_menu.py         [LINE:21  ]   Element App settings is verified
+# INFO     [2024-03-26 16:03:58,706] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_element_main_page_menu_app_settings' =============== 
+# INFO     [2024-03-26 16:03:58,707] conftest.py          [LINE:17  ]   =============== START TEST 'test_element_main_page_menu_help' =============== 
+# INFO     [2024-03-26 16:03:58,728] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/menuDrawer')"
+# INFO     [2024-03-26 16:03:58,801] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/help')"
+# INFO     [2024-03-26 16:03:58,807] test_menu.py         [LINE:28  ]   Element Help is verified
+# INFO     [2024-03-26 16:03:58,807] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_element_main_page_menu_help' =============== 
+# INFO     [2024-03-26 16:03:58,808] conftest.py          [LINE:17  ]   =============== START TEST 'test_element_main_page_menu_report' =============== 
+# INFO     [2024-03-26 16:03:58,818] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/menuDrawer')"
+# INFO     [2024-03-26 16:03:58,880] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/logs')"
+# INFO     [2024-03-26 16:03:58,887] test_menu.py         [LINE:35  ]   Element Report problem is verified
+# INFO     [2024-03-26 16:03:58,888] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_element_main_page_menu_report' =============== 
+# INFO     [2024-03-26 16:03:58,888] conftest.py          [LINE:17  ]   =============== START TEST 'test_element_main_page_menu_add_space' =============== 
+# INFO     [2024-03-26 16:03:58,898] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/menuDrawer')"
+# INFO     [2024-03-26 16:03:58,965] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/addSpace')"
+# INFO     [2024-03-26 16:03:58,972] test_menu.py         [LINE:42  ]   Element Add space is verified
+# INFO     [2024-03-26 16:03:58,972] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_element_main_page_menu_add_space' =============== 
+# INFO     [2024-03-26 16:03:58,973] conftest.py          [LINE:17  ]   =============== START TEST 'test_element_main_page_menu_terms_of_service' =============== 
+# INFO     [2024-03-26 16:03:58,984] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/menuDrawer')"
+# INFO     [2024-03-26 16:03:59,048] base_page.py         [LINE:28  ]   Element was found, "('id', 'com.ajaxsystems:id/documentation_text')"
+# INFO     [2024-03-26 16:03:59,054] test_menu.py         [LINE:49  ]   Element Terms of service is verified
+# INFO     [2024-03-26 16:03:59,054] conftest.py          [LINE:19  ]   =============== FINISH TEST 'test_element_main_page_menu_terms_of_service' =============== 
+# INFO     [2024-03-26 16:03:59,054] conftest.py          [LINE:61  ]   Webdriver stopped
+# INFO     [2024-03-26 16:03:59,228] conftest.py          [LINE:40  ]   Stopping appium server
