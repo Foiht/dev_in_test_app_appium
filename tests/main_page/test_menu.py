@@ -4,7 +4,7 @@ import pytest
 import allure
 
 
-@allure.feature('Main Page Test')
+@allure.feature('Main Page Menu Test')
 class TestMenuPage:
 
     @pytest.fixture(autouse=True)
