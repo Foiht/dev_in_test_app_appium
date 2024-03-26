@@ -24,6 +24,7 @@ def driver_base():
         driver.quit()
 
 
+@pytest.mark.skip(reason="'Test should be run separately from others")
 def test_find_homepage_title(driver_base) -> None:
     """
     Test established connection with Appium server and Android emulator

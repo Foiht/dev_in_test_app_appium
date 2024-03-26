@@ -32,18 +32,18 @@ class TestMenuPage:
             elem = self.main_page.report()
             assert elem, f"Element Report problem is not found"
             assert elem.is_enabled(), f"Element Report problem is disabled"
-            logging.info(fr"Element Report problem is verified")
+            logging.info(f"Element Report problem is verified")
 
     def test_element_main_page_menu_add_space(self):
         with allure.step("Testing main page menu element: Add space button"):
             elem = self.main_page.add_space()
             assert elem, f"Element Add space is not found"
             assert elem.is_enabled(), f"Element Add space is disabled"
-            logging.info(fr"Element Add space is verified")
+            logging.info(f"Element Add space is verified")
 
     def test_element_main_page_menu_terms_of_service(self):
         with allure.step("Testing main page menu element: Terms of service button"):
             elem = self.main_page.terms_of_service()
             assert elem, f"Element Terms of service is not found"
             assert elem.is_enabled(), f"Element Terms of service is disabled"
-            logging.info(fr"Element Terms of service is verified")
+            logging.info(f"Element Terms of service is verified")
