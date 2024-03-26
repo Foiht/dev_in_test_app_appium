@@ -9,14 +9,16 @@ Instructions from Appium https://appium.io/docs/en/2.5/quickstart/
 - add to global vars ANDROID_HOME and ANDROID_SDK_ROOT
 
     _for Ubuntu:_ \
-    _$ vim ~/.bashrc_ \
+    `$ vim ~/.bashrc` \
     _Add following lines_ \
-    _export ANDROID_HOME=$HOME/Android/Sdk_ \
-    _export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools_ \
+    `export ANDROID_HOME=$HOME/Android/Sdk` \
+    `export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools` \
 
 - optionally - install Appium Inspector https://github.com/appium/appium-inspector/releases
-
-
+- create file [settings.ini](settings.ini) in the project root dir with values: \
+`[settings]` \
+`LOGIN=<LOGIN>` \
+`PASSWORD=<PASSWORD>` 
 
 
 
