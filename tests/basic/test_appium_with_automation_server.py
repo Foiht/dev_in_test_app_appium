@@ -1,6 +1,11 @@
-from appium.webdriver.common.appiumby import AppiumBy
+import time
+
+from framework.ajax.root_page import RootPage
 
 
-def test_find_battery(driver) -> None:
-    el = driver.find_element(by=AppiumBy.XPATH, value='//*[@text="Battery"]')
-    el.click()
+def test_app_ajax(driver) -> None:
+    time.sleep(10)
+    main_page = RootPage(driver)
+    main_page.is_root_page()
+
+
