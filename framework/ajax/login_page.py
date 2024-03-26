@@ -1,3 +1,5 @@
+from appium.webdriver import WebElement
+
 from framework.ajax.locators import LoginPageLocators
 from framework.base_page import BasePage
 
@@ -6,13 +8,20 @@ class LoginPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
+    def user_field(self) -> WebElement:
+        return self.find_element(*LoginPageLocators.EMAIL_FIELD)
+
+    def password_field(self) -> WebElement:
+        return self.find_element(*LoginPageLocators.PASSWORD_FIELD)
+
+    def login_button(self) -> WebElement:
+        return self.find_element(*LoginPageLocators.AUTOLOGIN_BUTTON)
+
     def fill_user_credential(self, username: str, password: str) -> None:
-        element_email = self.find_element(*LoginPageLocators.EMAIL_FIELD)
-        element_email.send_keys(username)
+        self.user_field().send_keys(username)
+        self.password_field().send_keys(password)
+        self.login_button().click()
 
-        element_password = self.find_element(*LoginPageLocators.PASSWORD_FIELD)
-        element_password.send_keys(password)
+    def is_login_page(self) -> bool:
+        return bool(self.find_element(*LoginPageLocators.EMAIL_FIELD))
 
-    def click_login_button(self) -> None:
-        element = self.find_element(*LoginPageLocators.AUTOLOGIN_BUTTON)
-        element.click()

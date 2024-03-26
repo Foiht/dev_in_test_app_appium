@@ -24,7 +24,7 @@ def pytest_configure(config):
     logger.initialize(config.base_path)
 
 
-@pytest.fixture(scope='module')
+@pytest.fixture(scope='session')
 def run_appium_server():
     port = 4723
     subprocess.Popen(
@@ -35,14 +35,14 @@ def run_appium_server():
         shell=True
     )
     logging.info("Starting appium server")
-    time.sleep(10)
+    time.sleep(5)
     yield
     logging.info("Stopping appium server")
     subprocess.call(['pkill', 'appium'])
     release_port(port)
 
 
-@pytest.fixture(scope='module')
+@pytest.fixture
 def driver(run_appium_server):
     driver = webdriver.Remote('http://localhost:4723', options=get_android_desired_capabilities())
     logging.info("Webdriver started")

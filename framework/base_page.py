@@ -1,4 +1,6 @@
 import logging
+
+from appium.webdriver.webdriver import WebDriver
 from appium.webdriver.webelement import WebElement
 from selenium.common import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
@@ -7,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as exp_cond
 
 class BasePage:
 
-    def __init__(self, driver):
+    def __init__(self, driver: WebDriver):
         self.driver = driver
 
     def wait_until_element_present(self, locator_data, timeout=5) -> WebElement:
@@ -22,6 +24,9 @@ class BasePage:
         except NoSuchElementException:
             logging.debug(f"Element not found without waiting, {locator_type, locator}")
         return self.wait_until_element_present((locator_type, locator))
+
+    def go_back(self):
+        self.driver.back()
 
     @staticmethod
     def click_element(element_obj: WebElement) -> None:

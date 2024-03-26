@@ -12,3 +12,14 @@ class LoginPageLocators:
     FORGOT_PASSWORD_LINK = (AppiumBy.ID, 'com.ajaxsystems:id/authLoginForgotPassword')
     AUTOLOGIN_BUTTON = (AppiumBy.ID, 'com.ajaxsystems:id/authLogin')
 
+
+class MainPageLocators:
+    MENU_DRAWER = (AppiumBy.ID, 'com.ajaxsystems:id/menuDrawer')
+    APP_SETTINGS = (AppiumBy.ID, 'com.ajaxsystems:id/setting')
+    HELP = (AppiumBy.ID, 'com.ajaxsystems:id/help')
+    REPORT_PROBLEM = (AppiumBy.ID, 'com.ajaxsystems:id/logs')
+    ADD_SPACE = (AppiumBy.ID, 'com.ajaxsystems:id/addSpace')
+
+
+class SettingsPageLocators:
+    LOG_OUT = (AppiumBy.ID, 'com.ajaxsystems:id/accountInfoLogoutNavigate')
