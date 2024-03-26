@@ -25,5 +25,10 @@ def driver_base():
 
 
 def test_find_battery(driver_base) -> None:
+    """
+    Test established connection with Appium server and Android emulator
+    Run Appium server with default settings:
+    $ appium
+    """
     el = driver_base.find_element(by=AppiumBy.XPATH, value='//*[@text="Battery"]')
     el.click()
