@@ -10,23 +10,27 @@ class AppMainPage(BasePage):
         super().__init__(driver)
 
     def menu_drawer(self) -> WebElement:
-        return self.driver.find_element(*MainPageLocators.MENU_DRAWER)
+        return self.find_element(*MainPageLocators.MENU_DRAWER)
 
     def app_setting(self) -> WebElement:
         self.menu_drawer().click()
-        return self.driver.find_element(*MainPageLocators.APP_SETTINGS)
+        return self.find_element(*MainPageLocators.APP_SETTINGS)
 
     def help(self) -> WebElement:
         self.menu_drawer().click()
-        return self.driver.find_element(*MainPageLocators.HELP)
+        return self.find_element(*MainPageLocators.HELP)
 
     def report(self) -> WebElement:
         self.menu_drawer().click()
-        return self.driver.find_element(*MainPageLocators.REPORT_PROBLEM)
+        return self.find_element(*MainPageLocators.REPORT_PROBLEM)
 
     def add_space(self) -> WebElement:
         self.menu_drawer().click()
-        return self.driver.find_element(*MainPageLocators.ADD_SPACE)
+        return self.find_element(*MainPageLocators.ADD_SPACE)
+
+    def terms_of_service(self) -> WebElement:
+        self.menu_drawer().click()
+        return self.find_element(*MainPageLocators.TERM_OF_SERVICE)
 
     def is_app_main_page(self) -> bool:
         return bool(self.menu_drawer())

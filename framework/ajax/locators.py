@@ -2,8 +2,8 @@ from appium.webdriver.common.appiumby import AppiumBy
 
 
 class RootPageLocators:
-    LOGIN_BUTTON = (AppiumBy.XPATH, '(//androidx.compose.ui.platform.ComposeView[@resource-id="com.ajaxsystems:id/compose_view"])[1]/android.view.View/android.view.View/android.widget.Button')
-    CREATE_ACCOUNT_BUTTON = (AppiumBy.XPATH, '(//androidx.compose.ui.platform.ComposeView[@resource-id="com.ajaxsystems:id/compose_view"])[2]/android.view.View/android.view.View/android.widget.Button')
+    LOGIN_BUTTON = (AppiumBy.XPATH, '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Log in"]')
+    CREATE_ACCOUNT_BUTTON = (AppiumBy.XPATH, '//android.widget.TextView[@resource-id="com.ajaxsystems:id/text" and @text="Create account"]')
 
 
 class LoginPageLocators:
@@ -16,10 +16,11 @@ class LoginPageLocators:
 
 class MainPageLocators:
     MENU_DRAWER = (AppiumBy.ID, 'com.ajaxsystems:id/menuDrawer')
-    APP_SETTINGS = (AppiumBy.ID, 'com.ajaxsystems:id/setting')
+    APP_SETTINGS = (AppiumBy.ID, 'com.ajaxsystems:id/settings')
     HELP = (AppiumBy.ID, 'com.ajaxsystems:id/help')
     REPORT_PROBLEM = (AppiumBy.ID, 'com.ajaxsystems:id/logs')
     ADD_SPACE = (AppiumBy.ID, 'com.ajaxsystems:id/addSpace')
+    TERM_OF_SERVICE = (AppiumBy.ID, 'com.ajaxsystems:id/documentation_text')
 
 
 class SettingsPageLocators:

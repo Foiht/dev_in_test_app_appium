@@ -10,7 +10,7 @@ class SettingsPage(BasePage):
         super().__init__(driver)
 
     def sign_out(self) -> WebElement:
-        return self.driver.find_element(*SettingsPageLocators.LOG_OUT)
+        return self.find_element(*SettingsPageLocators.LOG_OUT)
 
     def is_setting_page(self) -> bool:
         return bool(self.sign_out())

@@ -50,3 +50,13 @@ def driver(run_appium_server):
     if driver:
         logging.info("Webdriver stopped")
         driver.quit()
+
+
+@pytest.fixture(scope='module')
+def driver_module(run_appium_server):
+    driver = webdriver.Remote('http://localhost:4723', options=get_android_desired_capabilities())
+    logging.info("Webdriver started")
+    yield driver
+    if driver:
+        logging.info("Webdriver stopped")
+        driver.quit()
