@@ -17,7 +17,7 @@ params_valid = (
 )
 
 
-@allure.feature('Random dog')
+@allure.feature('Login Page Test')
 class TestLoginPage:
 
     @pytest.fixture(autouse=True, scope="function")
